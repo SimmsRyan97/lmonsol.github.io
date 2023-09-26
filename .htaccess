@@ -24,9 +24,9 @@ RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
 
 #Errors
-ErrorDocument 404 https://www.ryan-simms.com/errors/404error
-ErrorDocument 500 https://www.ryan-simms.com/errors/500error
-ErrorDocument 503 https://www.ryan-simms.com/errors/503error
+ErrorDocument 404 errors/404error
+ErrorDocument 500 errors/500error
+ErrorDocument 503 errors/503error
 
 #Redirect Home Page
 DirectoryIndex about-me.html
