@@ -1,0 +1,114 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Ryan Simms | Contact Me</title>
+
+    <meta name="description" content="Personal website for Ryan Simms">
+    <meta name="keywords" content="Ryan Simms, Stockport, Ryan, Simms, MMU, Manchester, Manchester Metropolitan University">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="ryan-simms.com">
+    <meta name="twitter:title" content="Ryan Simms | About Me">
+    <meta name="twitter:image" content="http://ryan-simms.com/images/logo.jpg">
+    <meta name="twitter:description" content="Contact Me">
+
+    <meta property="og:title" content="Ryan Simms | Contact Me">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ryan-simms.com/contact-me">
+    <meta property="og:site_name" content="Ryan-Simms.com">
+    <meta property="og:image" content="http://ryan-simms.com/images/logo.jpg">
+    <meta property="og:image:secure_url" content="https://ryan-simms.com/images/logo.jpg">
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200">
+    <meta property="og:description" content="Contact Me">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link id="pageStyle" rel="stylesheet" href='css/defaultStyle.css' type='text/css'>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="https://www.ryan-simms.com/scripts/jQuery.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116160840-1" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-116160840-1');
+    </script>
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav-logo">
+            <img src="https://ryan-simms.com/images/RSLogo(Transparent).png">
+            <div class="nav-main">
+                <a href="https://www.ryan-simms.com/">Home</a>
+                <a href="https://www.ryan-simms.com/contact-me">Contact</a>
+            </div>
+        </div>
+        <div class="nav-sm">
+            <a href="https://www.instagram.com/simmsryan97/" target="_blank" rel="nofollow" title="Instagram"><div class="instagram"></div></a>
+            <a href="https://www.linkedin.com/in/simmsryan97/" target="_blank" rel="nofollow" title="LinkedIn"><div class="linkedin"></div></a>
+            <a><div id="lightSwitch"></div></a>
+        </div>
+    </nav>
+
+    <main id="mainContent">
+        <div class="wrapper">
+            <div class="form" style="border:solid 1px;margin-top:120px;margin-bottom:150px;">
+                <h1>Contact Form</h1>
+                <p>To contact me, leave your name and email address as well as a message and I will try and reply as soon as I can via email.</p>
+                <form method="post" action="contact/contact" enctype="multipart/form-data" autocomplete="off">
+                    <div class="field-wrap">
+                        <label>First Name <span class="req">*</span></label>
+                        <input class="index" type="text" required autocomplete="off" name='first_name'>
+                    </div>
+
+                    <div class="field-wrap">
+                        <label>Last Name <span class="req">*</span></label>
+                        <input class="index" type="text" required autocomplete="off" name='last_name'>
+                    </div>
+
+                    <div class="field-wrap">
+                        <label>Email Address <span class="req">*</span></label>
+                        <input class="index" type="email" required autocomplete="off" name='email_address'>
+                    </div>
+
+                    <div class="field-wrap">
+                        <label>Message <span class="req">*</span></label>
+                        <textarea class="index" type="text" required autocomplete="off" name='comments' maxlength="500" style="height:300px;"></textarea>
+                    </div>
+                    <div class="g-recaptcha" data-sitekey="6LdrxD4UAAAAACAaVAR6U9BjOEDC9-j4QaOzBsFh"></div><br>
+                    <button type="submit" class="button button-block">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <div id="backToTop"></div>
+
+    <?php
+        require_once('counter/counter.php');
+    
+        updateCounter("Contact Me"); // Updates page hits
+        updateInfo(); // Updates hit info
+        ?>
+</body>
+
+<script src="scripts/lightSwitch.js"></script>
+<script src="scripts/scrollToTop.js"></script>
+<script src="scripts/dropDowns.js"></script>
+
+</html>

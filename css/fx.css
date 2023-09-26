@@ -1,0 +1,727 @@
+html,
+body {
+    min-height: 100%;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+li {
+    margin-left: 10px;
+}
+
+#chat-area,
+label {
+    margin-top: 10px
+}
+
+label,
+textarea {
+    margin-bottom: 10px
+}
+
+.tab-group {
+    list-style: none
+}
+
+.tab-group a,
+a,
+a.index {
+    text-decoration: none
+}
+
+.tab-group:after,
+.top-row:after {
+    content: "";
+    clear: both
+}
+
+.button,
+.tab-group a,
+div.info,
+ol {
+    text-align: center
+}
+
+#text,
+.send-button {
+    vertical-align: middle
+}
+
+.field-wrap,
+html {
+    position: relative
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box
+}
+
+body {
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes color {
+    from {
+        color: inherit;
+    }
+
+    to {
+        color: #0084B4;
+    }
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    color: #1C1C1C;
+    background-color: #E6ECF0;
+    background-image: url("https://www.ryan-simms.com/images/forum/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body.dark {
+    color: #FFF;
+    background-color: #10171E;
+}
+
+nav {
+    background-color: #FFFFFFBF;
+    z-index: 1;
+    border-radius: 0 0 10px 10px;
+    border-bottom: solid 0.5px;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav.dark {
+    background-color: #15202BBF;
+    border-bottom: solid 0.5px gray;
+}
+
+.nav-logo {
+    margin-left: 20px;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    height: 60px;
+}
+
+.nav-main {
+    width: fit-content;
+}
+
+.nav-main a {
+    margin: 0 10px;
+}
+
+.nav-sm {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.nav-sm a {
+    margin: 0 10px;
+}
+
+.holiday {
+    position: absolute;
+    left: 42.5%;
+    top: -25px;
+}
+
+.navIcon {
+    cursor: pointer;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navIcon.dark {
+    filter: invert(1);
+}
+
+.notifs {
+    position: absolute;
+    top: -25px;
+    cursor: pointer;
+    background: red;
+    z-index: 1;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+
+.dropDown {
+    position: absolute;
+    z-index: 1;
+    background-color: #FFF;
+    border: solid 1px;
+    padding: 10px;
+    text-align: center;
+}
+
+.dropDown.dark {
+    background-color: #15202B;
+    color: #FFF;
+    border: solid 1px;
+}
+
+#lightSwitch {
+    cursor: pointer;
+}
+
+footer {
+    position: relative;
+}
+
+a {
+    color: #1C1C1C
+}
+
+a.dark {
+    color: #FFF
+}
+
+a:hover {
+    animation: color .5s;
+    color: #0084B4;
+    cursor: pointer;
+}
+
+#backToTop {
+    position: fixed;
+    width:75px;
+    height:56px;
+    bottom: 120px;
+    right: 50px;
+    opacity: 0.5;
+    z-index: 1;
+    background-image: url("https://www.ryan-simms.com/images/icons/totop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius:5px;
+}
+
+.wrapper {
+    margin: 5px;
+    background-color: #FFFFFFBF;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.wrapper.dark {
+    background-color: #15202BBF;
+}
+
+#images {
+    margin-top: 400px;
+}
+
+span {
+    padding-right: 5px;
+}
+
+label {
+    display: block
+}
+
+textarea {
+    padding: 10px;
+    border: 1px solid #1C1C1C;
+    border-radius: 2px;
+    resize: none
+}
+
+input {
+    border: 1px solid #1C1C1C;
+    border-radius: 2px;
+    padding: 5px
+}
+
+a.index {
+    color: #FFF;
+    -webkit-transition: .5s ease;
+    transition: .5s ease
+}
+
+.form {
+    padding: 40px;
+    max-width: 820px;
+    margin: 40px auto;
+    border: solid 1px;
+    border-radius: 4px;
+}
+
+.tab-group {
+    padding: 0;
+    margin: 0 0 40px
+}
+
+.tab-group:after {
+    display: table
+}
+
+.tab-group li a {
+    display: block;
+    padding: 15px;
+    background: #0084B4;
+    opacity: 0.5;
+    color: #FFF;
+    font-size: 20px;
+    float: left;
+    width: 50%;
+    cursor: pointer;
+    -webkit-transition: .5s ease;
+    transition: .5s ease
+}
+
+.tab-group li a:hover {
+    background: #0084B4;
+}
+
+.tab-group .active a {
+    background: #0084B4;
+    opacity: 1;
+}
+
+.button,
+.send-button {
+    outline: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    -webkit-appearance: none
+}
+
+div.info {
+    color: pink;
+    display: box;
+    padding: 5px;
+    margin-top: -20px;
+    margin-bottom: 15px;
+    border: 1px solid red;
+    background: #66131c
+}
+
+label.req {
+    margin: 2px;
+}
+
+label.active.req {
+    opacity: 0
+}
+
+.field-wrap {
+    margin-bottom: 40px
+}
+
+.top-row:after {
+    display: table
+}
+
+.top-row > div {
+    float: left;
+    width: 46%;
+    margin-right: 8%
+}
+
+.top-row > div:last-child {
+    margin: 0
+}
+
+.button {
+    border: 0;
+    border-radius: 0;
+    padding: 15px 0;
+    font-size: 2rem;
+    background: #0084B4;
+    color: #fff;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease
+}
+
+.button:focus,
+.button:hover {
+    background: #00afef;
+    cursor: pointer;
+}
+
+.button-block {
+    display: block;
+    width: 100%
+}
+
+label.index {
+    text-align: center;
+    margin: 0 0 50px
+}
+
+input.index,
+textarea.index {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid #a0b3b0;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease
+}
+
+input.index:focus,
+textarea.index:focus {
+    outline: 0;
+    border-color: #0084B4
+}
+
+textarea.index {
+    border: 2px solid #a0b3b0;
+    resize: vertical
+}
+
+.req {
+    color: red;
+}
+
+#chat-area {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    z-index: 10;
+    max-height: 500px;
+    border: 1px solid #000;
+    padding: 10px;
+    background: #fff;
+    margin-right: 10px;
+}
+
+#chat-area p {
+    color: #000
+}
+
+#text {
+    border: 1px solid #000;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin-top: 12px
+}
+
+.send-button,
+.twitter-button {
+    border: 0;
+    -webkit-transition: all .5s ease
+}
+
+.send-button {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #0084B4;
+    transition: all .5s ease;
+    margin-top: 15px
+}
+
+.question,
+.answer {
+    border: 1px solid #1C1C1C;
+    min-height: 200px;
+    margin-bottom: 10px;
+}
+
+.answer {
+    margin-bottom: 20px;
+}
+
+.question.dark,
+.answer.dark {
+    border: 1px solid #fff
+}
+
+.topics {
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: solid 1px;
+    padding: 10px 10px 0 10px;
+    overflow: visible;
+}
+
+.date {
+    margin-left: 2px;
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 12px;
+}
+
+#icon-bar {
+    position: relative;
+}
+
+.icon-bar-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #FFF;
+}
+
+#fontSizeList {
+    position: absolute;
+    left: -120px;
+    width: 200px;
+    padding-top: 10px;
+    background-color: #FFF;
+    border: solid 1px;
+    text-align: center;
+}
+
+#fontSizeList.dark {
+    background-color: #15202B;
+}
+
+#linkContainer {
+    position: absolute;
+    right: -125px;
+    width: 305px;
+    padding: 5px;
+    background-color: #FFF;
+    border: solid 1px;
+}
+
+#linkContainer.dark {
+    background-color: #15202B;
+}
+
+#youtubeContainer {
+    position: absolute;
+    right: -125px;
+    width: 305px;
+    padding: 5px;
+    background-color: #FFF;
+    border: solid 1px;
+}
+
+#youtubeContainer.dark {
+    background-color: #15202B;
+}
+
+#emojiContainer {
+    position: absolute;
+    right: -112px;
+    width: 225px;
+    max-height: 200px;
+    overflow-y: scroll;
+    padding: 5px;
+    background-color: #FFF;
+    border: solid 1px;
+}
+
+#emojiContainer.dark {
+    background-color: #15202B;
+}
+
+#emojiContainer span {
+    width: 200px;
+}
+
+.preview {
+    border: solid 1px;
+    padding: 5px;
+}
+
+#editor img {
+    max-height: 200px;
+}
+
+#post a {
+    color: #0084B4;
+}
+
+#post a:hover {
+    color: #0084B4;
+    animation: none;
+}
+
+#post ul,
+[class*=reply] ul {
+    list-style: none;
+    padding: 0;
+}
+
+#post img,
+[class*=reply] img,
+#post video,
+[class*=reply] video {
+    max-width: 75%;
+}
+
+div[class*=replyId] {
+    display: none;
+}
+
+input[class*=deleteReplyYN] {
+    background: none;
+    border: none;
+    width: 100px;
+    font-size: 14px;
+}
+
+.new-post {
+    height: 300px;
+    border: 1px solid #a0b3b0;
+    background: #FFF;
+    color: #1C1C1C;
+    padding: 5px 10px;
+    overflow-y: scroll;
+}
+
+#editor ul {
+    list-style: none;
+}
+
+button[class*=edit],
+button[class*=cancel],
+button[class*=delete],
+button[class*=save],
+button[class*=report] {
+    border: none;
+    padding-bottom: 10px;
+    background: 0;
+    outline: 0;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type=submit],
+input[type=reset] {
+    cursor: pointer;
+}
+
+button[class*=edit].dark,
+button[class*=cancel].dark,
+[class*=delete].dark,
+button[class*=report].dark,
+button[class*=save].dark {
+    color: #fff
+}
+
+p[class*=editReply] {
+    font-style: italic;
+    font-size: 14px;
+}
+
+#deleteYN {
+    background: 0 0;
+    border: none;
+    width: 100px;
+    font-size: 14px;
+}
+
+#postId,
+#questionId,
+.replyId {
+    display: none
+}
+
+.profileImage,
+.profileImageForum {
+    aspect-ratio: 8/5;
+    width: 100%;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 26px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.twitter-button {
+    border-radius: 5px;
+    background-color: #0084b4;
+    transition: all .5s ease
+}
+
+.facebook-button {
+    border: 0;
+    border-radius: 5px;
+    background-color: #3b5998;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease
+}
+
+.first,
+.last,
+.next,
+.prev {
+    position: absolute;
+    margin-top: -30px
+}
+
+.first {
+    left: 35px
+}
+
+.prev {
+    left: 95px
+}
+
+#editor video {
+    max-height: 200px;
+}
+
+#cookies {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    height: 8%;
+    width: 100%;
+    background-color: #FFF;
+    padding-left: 30px;
+    border-top: solid 0.5px black;
+}
+
+#cookies.dark {
+    background-color: #15202B;
+    border-top: solid 0.5px gray;
+}
+
+#cookie-button {
+    width: 100px;
+    border: 0;
+    border-radius: 0;
+    padding: 5px;
+    margin-left: 10px;
+    font-size: 20px;
+    background: #0084B4;
+    color: #fff;
+}
