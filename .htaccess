@@ -20,8 +20,8 @@ RewriteRule ^login/inboxActions/createMessage/([0-9a-zA-Z_-]+) /login/inboxActio
 RewriteRule ^babysitting/reviews/([0-9]+) /babysitting/reviews?page=$1 [NC]
 
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.php -f
-RewriteRule ^(.*)$ $1.php [NC,L]
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
 
 #Errors
 ErrorDocument 404 https://www.ryan-simms.com/errors/404error
@@ -29,7 +29,7 @@ ErrorDocument 500 https://www.ryan-simms.com/errors/500error
 ErrorDocument 503 https://www.ryan-simms.com/errors/503error
 
 #Redirect Home Page
-DirectoryIndex about-me.php
+DirectoryIndex about-me.html
 
 #<IfModule mod_expires.c>
 #  ExpiresActive on
