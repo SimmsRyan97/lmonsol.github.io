@@ -205,7 +205,6 @@ a.dark {
     overflow: auto;
     display: flex;
     align-items: center;
-	height: 100%;
 	position: relative;
 }
 
