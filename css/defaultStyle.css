@@ -61,7 +61,6 @@ html {
 body {
     animation: fadein 2s;
     font-family: 'Roboto', sans-serif;
-    font-size: 44px;
     color: #1C1C1C;
     background-color: #E6ECF0;
     background-image: url("https://www.ryan-simms.com/images/RSLogo.jpg");
@@ -77,6 +76,7 @@ body.dark {
 }
 
 nav {
+	font-size: 22px;
     background-color: #FFFFFFBF;
     z-index: 1;
     border-radius: 0 0 10px 10px;
@@ -196,6 +196,7 @@ a.dark {
 }
 
 .wrapper {
+	font-size: 40px;
     margin: 10px;
     padding: 25px;
     background-color: #FFFFFFBF;
