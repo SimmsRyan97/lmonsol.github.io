@@ -84,6 +84,7 @@ nav {
     height: 65px;
     display: flex;
     justify-content: space-between;
+	position: sticky;
 }
 
 nav.dark {
@@ -206,7 +207,7 @@ a.dark {
     display: flex;
     align-items: center;
 	position: relative;
-	height: 90vh;
+	height: 600px;
 }
 
 .wrapper.dark {
