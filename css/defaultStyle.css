@@ -207,6 +207,8 @@ a.dark {
     align-items: center;
 	position: fixed;
 	overflow-y: scroll;
+	top: 0;
+	bottom: 0;
 }
 
 .wrapper.dark {
