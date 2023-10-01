@@ -1,6 +1,6 @@
 $(document).ready(function(){
   // get viewport width / height
-  var w=window,d=document,e=d.documentElement,g=d.getElementsByTagName('body')[0],x=w.innerWidth||e.clientWidth||g.clientWidth,y=w.innerHeight||e.clientHeight||g.clientHeight,
+  var w=window,d=document,e=d.documentElement,g=d.getElementsByTagName('body')[0],x=w.innerWidth||e.clientWidth||g.clientWidth,y=w.innerHeight-100||e.clientHeight||g.clientHeight,
       pages = $('.sticky-wrapper'),
       pagesCache = {};
    
@@ -12,7 +12,7 @@ $(document).ready(function(){
         top = _this.offset().top
     // layer z-index properly
     _this.css({
-      'z-index' : 1000*i+100,
+      'z-index' : 10*i+100,
       'height' : y + 'px',
       'top' : top + 'px',
       'position' : 'absolute'
