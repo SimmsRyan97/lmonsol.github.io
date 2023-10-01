@@ -78,13 +78,15 @@ body.dark {
 nav {
 	font-size: 22px;
     background-color: #FFFFFF;
-    z-index: 1;
-    border-radius: 0 0 10px 10px;
+    z-index: 100;
     border-bottom: solid 0.5px;
     height: 65px;
     display: flex;
     justify-content: space-between;
-	position: sticky;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 }
 
 nav.dark {
