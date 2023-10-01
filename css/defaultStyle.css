@@ -205,9 +205,6 @@ a.dark {
     overflow: auto;
     display: flex;
     align-items: center;
-	position: fixed;
-	overflow-y: scroll;
-	height: 100vh;
 }
 
 .wrapper.dark {
@@ -221,6 +218,13 @@ a.dark {
 .wrapper img {
     max-width: 450px;
     max-height: 300px;
+}
+
+.wrapper-fixed {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0;
+  right: 0;
 }
 
 .content {
