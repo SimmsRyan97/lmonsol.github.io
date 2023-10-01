@@ -208,6 +208,7 @@ a.dark {
     align-items: center;
 	position: relative;
 	height: 1200px;
+	width: 100%;
 }
 
 .wrapper.dark {
