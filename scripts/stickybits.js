@@ -12,7 +12,7 @@ $(document).ready(function(){
         top = _this.offset().top
     // layer z-index properly
     _this.css({
-      'z-index' : 1*i+100,
+      'z-index' : 80*i+100,
       'height' : y + 'px',
       'top' : top + 'px',
       'position' : 'absolute'
