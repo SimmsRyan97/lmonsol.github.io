@@ -150,6 +150,7 @@ nav.dark {
     color: transparent;
     user-select: none;
     font-size: 1px;
+    cursor: pointer;
 }
 
 .logo {
@@ -174,7 +175,10 @@ a {
 
 a:hover {
     color: #0084B4;
-    cursor: pointer;
+}
+
+a.dark {
+    color: #02C0FA;
 }
 
 #backToTop {
@@ -198,29 +202,25 @@ a:hover {
     border: solid 1px;
     border-radius: 5px;
     overflow: auto;
+    display: flex;
+    align-items: center;
 }
 
 .wrapper.dark {
     background-color: #15202BBF;
 }
 
+.wrapper div {
+    height: 100%;
+}
+
+.wrapper img {
+    max-width: 450px;
+    max-height: 300px;
+}
+
 .content {
-    margin-bottom: 50px;
-}
-
-.image img {
-    max-width: 500px;
-    border-radius: 5px;
-}
-
-.imageLeft img {
-    float: left;
-    margin-right: 25px;
-}
-
-.imageRight img {
-    float: right;
-    margin-left: 25px;
+    padding: 0 10px 0 10px;
 }
 
 textarea {
