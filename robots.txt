@@ -1,3 +1,0 @@
-User-agent: *
-
-sitemap: https://www.ryan-simms.com/sitemap.xml
